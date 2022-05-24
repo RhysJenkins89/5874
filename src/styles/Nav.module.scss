@@ -148,7 +148,11 @@ nav {
       font-size: 21px;
       line-height: 37.8px;
       color: black;
-      margin: 1rem 4rem 1rem 0;
+      margin: 1rem 20% 1rem 0;
+
+      @media (max-width: 500px) {
+        margin: 1rem 7.5% 1rem 0;
+      }
     }
 
     p:first-child {

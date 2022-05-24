@@ -4,13 +4,41 @@
   background-color: #EDEFF1;
   display: flex;
 
+  @media (max-width: 800px) {
+    flex-direction: column;
+    height: fit-content;
+  }
+
   .main {
     width: 50%;
     display: flex;
 
+    @media (max-width: 800px) {
+      height: 75vh;
+      width: 100%
+    }
+
     .text_container {
       width: 60%;
       margin: auto 20%;
+
+      @media (max-width: 1050px) {
+        width: 80%;
+        margin: auto 10%;
+      }
+
+      @media (max-width: 800px) {
+        margin: auto 20%;
+      }
+
+      @media (max-width: 550px) {
+        margin: auto 10%;
+      }
+
+      @media (max-width: 400px) {
+        width: 90%;
+        margin: auto 5%;
+      }
 
       h1 {
         font-family: 'Poppins', sans-serif;
@@ -18,6 +46,14 @@
         font-size: 48px;
         line-height: 57px;
         color: #19293A;
+
+        @media (max-width: 800px) {
+          font-size: 40px;
+        }
+
+        @media (max-width: 500px) {
+          font-size: 32px;
+        }
   
         span {
           color: #506473;
@@ -28,6 +64,10 @@
         font-size: 21px;
         line-height: 37.8px;
         color: #506473;
+
+        @media (max-width: 800px) {
+          font-size: 18px;
+        }
       }
   
       a {
@@ -38,6 +78,10 @@
         border-bottom: solid 2px #C0345E;
         text-decoration: none;
         transition: all .75s ease;
+
+        @media (max-width: 800px) {
+          font-size: 18px;
+        }
       }
 
       a:hover {
@@ -50,10 +94,19 @@
     width: 50%;
     display: flex;
 
+    @media (max-width: 800px) {
+      display: none;
+    }
+
     .columns_container {
       width: 60%;
       margin: auto 20%;
       display: flex;
+
+      @media (max-width: 1050px) {
+        width: 80%;
+        margin: auto 10%;
+      }
 
       .column_one {
         

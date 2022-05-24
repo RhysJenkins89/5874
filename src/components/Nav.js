@@ -4,13 +4,11 @@ import styles from "../styles/Nav.module.scss"
 
 export default function Nav() {
   const [open, setOpen] = useState(false)
-  const [ascending, setAscending] = useState(true);
+  const [ascending, setAscending] = useState(true)
   const prevScrollY = useRef(0);
 
   const toggleNav = () => {
-    console.log("Hello from the toggle function!")
-    if (open === true) {return}
-    console.log("Hello from after the open return!")
+    if (open) {return}
     const currentScrollY = window.scrollY
     if (prevScrollY.current < currentScrollY) {
       setAscending(false)
@@ -26,7 +24,7 @@ export default function Nav() {
     return () => {
       window.removeEventListener('scroll', toggleNav);
     };
-  }, [window.scrollY]);
+  }, [open]);
 
   return (
     <nav className={`${ascending ? "" : styles.hidden}`}>
