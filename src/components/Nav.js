@@ -41,7 +41,7 @@ export default function Nav() {
       </div>
 
       {/* Hamburger menu */}
-      <div className={styles.square} onClick={() => setOpen(!open)}>
+      <div className={`${styles.square} ${open ? styles.open : ""}`} onClick={() => setOpen(!open)}>
         <span className={open ? styles.open : ""}></span>
         <span className={open ? styles.open : ""}></span>
         <span className={open ? styles.open : ""}></span>

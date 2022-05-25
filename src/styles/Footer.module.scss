@@ -111,6 +111,7 @@ footer {
   .info_container {
     width: 50%;
     position: relative;
+    z-index: 1;
 
     @media (max-width: 750px) {
       display: none;

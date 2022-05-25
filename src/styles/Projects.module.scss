@@ -41,6 +41,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 2rem;
+    z-index: 1;
 
     @media (max-width: 1050px) {
       margin: 0 5% 4rem 5%;
@@ -64,10 +65,12 @@
 
     .container {
       position: relative;
+      z-index: 1;
 
       img {
         height: 100%;
         width: 100%;
+        z-index: 1;
       }
 
       .overlay {
@@ -81,6 +84,7 @@
         visibility: hidden;
         transition: all .75s ease;
         border-radius: 10px;
+        z-index: 1;
       }
 
       .text_container {
@@ -93,6 +97,7 @@
         flex-direction: column;
         justify-content: flex-end;
         align-items: flex-start;
+        z-index: 1;
 
         h3 {
           margin: 0 0 1rem 2rem;
